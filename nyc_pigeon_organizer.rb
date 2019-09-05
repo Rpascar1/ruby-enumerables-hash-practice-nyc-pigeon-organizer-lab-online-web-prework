@@ -1,4 +1,4 @@
-def guessing_totally_based_on_desired_output(data)
+def nyc_pigeon_organizer(data)
   new_hash = {}
   data.each do |attribute, what|
     what.each do |what, who|
@@ -10,4 +10,3 @@ def guessing_totally_based_on_desired_output(data)
   end
   new_hash
 end  
-  
