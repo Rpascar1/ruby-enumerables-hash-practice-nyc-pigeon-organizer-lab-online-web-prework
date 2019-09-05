@@ -1,12 +1,13 @@
 def nyc_pigeon_organizer(data)
   new_hash = {}
-  data.each do |attribute, what|
-    what.each do |what, who|
-      who.each do |who|
-        new_hash[who] ||= {}
-        new_hash[who][attribute] ||= []
-        new_hash[who][attribute] << what.to_s
+  data.each do |characteristic, specifics|
+    specifics.each do |specifics, bird|
+      bird.each do |bird|
+        new_hash[bird] ||= {}
+        new_hash[bird][characteristic] ||= []
+        new_hash[bird][characteristic] << specifics.to_s
       end
+    end
   end
-  new_hash
-end  
+    new_hash
+end 
