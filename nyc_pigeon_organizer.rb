@@ -1,3 +1,5 @@
-def nyc_pigeon_organizer(data)
-  # write your code here!
-end
+def guessing_totally_based_on_desired_output(data)
+  new_hash = {}
+  
+end  
+  
